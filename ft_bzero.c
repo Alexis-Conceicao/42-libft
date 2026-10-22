@@ -6,16 +6,16 @@
 /*   By: alconcei <alconcei@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 14:38:36 by alconcei          #+#    #+#             */
-/*   Updated: 2026/10/21 14:47:06 by alconcei         ###   ########.fr       */
+/*   Updated: 2026/10/22 16:18:49 by alconcei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_bzero(void *a, size_t n)
+void	ft_bzero(void *a, size_t n)
 {
-	unsigned char *i;
-	
+	unsigned char	*i;
+
 	i = a;
 	while (n > 0)
 	{
@@ -25,4 +25,3 @@ void ft_bzero(void *a, size_t n)
 	}
 	return (a);
 }
-
