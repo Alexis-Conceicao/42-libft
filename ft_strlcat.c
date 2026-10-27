@@ -6,13 +6,13 @@
 /*   By: alconcei <alconcei@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 13:32:39 by alconcei          #+#    #+#             */
-/*   Updated: 2026/10/22 16:17:55 by alconcei         ###   ########.fr       */
+/*   Updated: 2026/10/27 02:16:00 by alconcei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	strlcat(char *dest, const char *src, size_t size)
+size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	size_t	i;
 	size_t	dest_len;
@@ -35,3 +35,16 @@ size_t	strlcat(char *dest, const char *src, size_t size)
 	dest[dest_len + i] = '\0';
 	return (dest_len + src_len);
 }
+
+/*#include <stdio.h>
+
+int	main(void)
+{
+	char dest[20] = "Ola ";
+	size_t ret;
+
+	ret = ft_strlcat(dest, "Lisboa", 0);
+	printf("[%s]\n", dest);
+	printf("%zu\n", ret);
+	return (0);
+}*/

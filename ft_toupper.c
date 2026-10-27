@@ -6,7 +6,7 @@
 /*   By: alconcei <alconcei@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 14:57:13 by alconcei          #+#    #+#             */
-/*   Updated: 2026/10/22 15:03:30 by alconcei         ###   ########.fr       */
+/*   Updated: 2026/10/27 01:45:25 by alconcei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,11 @@ int	ft_toupper(int c)
 		return (c - 32);
 	return (c);
 }
+
+/*#include <stdio.h>
+
+int main(void)
+{
+	printf("%c %c %c\n", ft_toupper('a'), ft_toupper('Z'), ft_toupper('1'));
+	return (0);
+}*/
