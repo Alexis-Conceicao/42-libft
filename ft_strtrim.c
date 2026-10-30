@@ -6,7 +6,7 @@
 /*   By: alconcei <alconcei@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 16:03:37 by alconcei          #+#    #+#             */
-/*   Updated: 2026/10/28 17:22:15 by alconcei         ###   ########.fr       */
+/*   Updated: 2026/10/29 12:38:24 by alconcei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static int	ft_isset(char c, char const *set)
 	{
 		if (c == *set)
 			return (1);
-		*set++;
+		set++;
 	}
 	return (0);
 }
@@ -48,5 +48,18 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 int	main(void)
 {
+	const char *s1 = "!!!Ta correto!!!";
+	const char *set = "!";
+	char *trim;
 
+	trim = ft_strtrim(s1, set);
+	if (!trim)
+		printf("Allocation failed.\n");
+	else
+	{
+		printf("Original str: %s\n", s1);
+		printf("Trimmed str: %s\n", trim);
+		free(trim);
+	}
+	return (0);
 }*/

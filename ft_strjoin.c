@@ -6,7 +6,7 @@
 /*   By: alconcei <alconcei@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 12:58:36 by alconcei          #+#    #+#             */
-/*   Updated: 2026/10/28 16:03:01 by alconcei         ###   ########.fr       */
+/*   Updated: 2026/10/30 10:37:43 by alconcei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,4 +48,6 @@ int	main(void)
 	s2 = " No test";
 	res = ft_strjoin(s1, s2);
 	printf("%s\n", res);
+	free(res);
+	return (0);
 }*/

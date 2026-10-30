@@ -6,7 +6,7 @@
 /*   By: alconcei <alconcei@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 11:26:03 by alconcei          #+#    #+#             */
-/*   Updated: 2026/10/28 16:04:03 by alconcei         ###   ########.fr       */
+/*   Updated: 2026/10/29 15:52:32 by alconcei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,5 +57,9 @@ void				ft_putnbr_fd(int n, int fd);
 char				*ft_substr(char const *s, unsigned int start, size_t len);
 char				*ft_strjoin(char const *s1, char const *s2);
 char				*ft_strtrim(char const *s1, char const *set);
+char				**ft_split(char const *s, char c);
+char				*ft_itoa(int n);
+char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void				ft_striteri(char *s, void (*f)(unsigned int, char *));
 
 #endif
