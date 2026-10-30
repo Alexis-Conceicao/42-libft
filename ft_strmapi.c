@@ -6,7 +6,7 @@
 /*   By: alconcei <alconcei@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/29 14:24:26 by alconcei          #+#    #+#             */
-/*   Updated: 2026/10/30 10:44:55 by alconcei         ###   ########.fr       */
+/*   Updated: 2026/10/30 12:35:15 by alconcei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	unsigned int	i;
 	char			*res;
 
-	if (!s)
+	if (!s || !f)
 		return (NULL);
 	res = malloc(sizeof(char) * (ft_strlen(s) + 1));
 	if (!res)

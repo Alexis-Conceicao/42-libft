@@ -6,7 +6,7 @@
 /*   By: alconcei <alconcei@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 11:26:03 by alconcei          #+#    #+#             */
-/*   Updated: 2026/10/29 15:52:32 by alconcei         ###   ########.fr       */
+/*   Updated: 2026/10/30 12:20:02 by alconcei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,5 +61,8 @@ char				**ft_split(char const *s, char c);
 char				*ft_itoa(int n);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
+
+// Part3
+t_list				*ft_lstnew(void *content);
 
 #endif
